@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="professor.css">
+  <title>Professor</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="img.jpg" alt="giannis" />
+      <nav>
+        <a href="aluno.html">Aluno</a>
+        <a href="index.html">Home</a>
+        <a href="professor.html">Professor</a>
+      </nav>
+      <img src="img.jpg" alt="giannis" />
+    </header>
+
+
+    <article class="forms">
+      <h1>Cadastro Professor</h1>
+      <div class="dados_pessoais">
+        <h3>Dados Pessoais</h3>
+        <form action="lista-professor.php" method="get">
+          <label for="name">Nome do Aluno</label>
+          <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required class="forms_caixa">
+          <label for="name">Endereço</label>
+          <input type="text" name="endereco_professor" id="endereço" placeholder="Digite seu endereço" required
+            class="forms_caixa">
+          <label for="name">Idade do Professor</label>
+          <input type="number" name="idade" id="idade_professor" placeholder="Digite sua idade" required
+            class="forms_caixa">
+          <label for="name">Senha</label>
+          <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required class="forms_caixa">
+
+          <label for="Estado">Estado</label>
+          <select id="Estado" name="Estado" required>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+          </select>
+
+          <label for="Cidade">Cidade</label>
+          <select id="Cidade" name="Cidade">
+            <option value="Bahia">Bahia</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Amazonas">Amazonas</option>
+          </select>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+      <div class="dados_profissionais">
+        <h3>Cadastro Profissionais</h3>
+        <form action="lista-professor.css" method="get">
+          <label form="loctrab">local de trabalho</label>
+          <input type="text" name="loctrab" id="loctrab" placeholder="digite Local de trabalho" required class="forms_caixa"> </input>
+          <input type="submit" value="Enviar" id="Enviar">
+        </form>
+      </div>
+    </article>
+
+    <footer>
+      <p>Rodapé</p>
+    </footer>
+
+</body>
+
+</html>

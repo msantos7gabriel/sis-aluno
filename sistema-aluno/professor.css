@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15vh 75vh 10vh;
+  grid-template-areas:
+    "header "
+    "main "
+    "footer ";
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cyan;
+}
+
+header img {
+  height: 100%;
+}
+
+header a {
+  padding: 0 100px;
+  font-size: 3em;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: red;
+  cursor: crosshair;
+}
+
+.forms {
+  font-size: 1.5em;
+  background-color: salmon;
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "1 2"
+    "DP CP";
+}
+
+.forms h1 {
+  margin: auto;
+}
+
+.dados_pessoais {
+  grid-area: DP;
+  margin: 0 auto;
+}
+
+.dados_profissionais {
+  grid-area: CP;
+  margin: 0 auto;
+}
+
+.forms_caixa {
+  border-radius: 10px;
+  border-style: none;
+  height: 20px;
+}
+
+input[type="text"] {
+  display: flex;
+  padding: 0 50px;
+  text-align: center;
+  height: 30px;
+  margin: 10px;
+}
+
+input[type="number"] {
+  display: flex;
+  padding: 0 50px;
+  text-align: center;
+  height: 30px; 
+  margin: 10px;
+}
+
+input[type="password"] {
+  display: flex;
+  padding: 0 50px;
+  text-align: center;
+  height: 30px;
+  margin: 10px;
+}
+
+input[type="submit"] {
+  display: flex;
+  padding: 0 50px;
+  text-align: center;
+  height: 30px;
+  margin: 0px 75px;
+}
+
+footer {
+  grid-area: footer;
+  font-size: 2.5em;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  margin: 0 auto;
+}

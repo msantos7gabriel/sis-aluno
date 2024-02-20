@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15vh 75vh 10vh;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cyan;
+}
+header img {
+  height: 100%;
+}
+
+header a {
+  padding: 0 100px;
+  font-size: 3em;
+}
+header a {
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+  color: red;
+  cursor: crosshair;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 5% 67.5% 22.5% 5%;
+  grid-template-rows: 100%;
+  font-size: 2.5em;
+}
+section {
+  background-color: salmon;
+  grid-column: 2/3;
+}
+aside {
+  background-color: red;
+  grid-column: 3/4;
+}
+
+footer {
+  grid-area: footer;
+  font-size: 2.5em;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+footer p {
+  margin: 0 auto;
+}
+
+/*Aluno*/
+
+.forms {
+  font-size: 2.5em;
+  margin: 0 100px;
+  background-color: salmon;
+  height: 100%;
+}
+
+/* Professor */
+
