@@ -82,7 +82,7 @@ input[type="number"] {
   display: flex;
   padding: 0 50px;
   text-align: center;
-  height: 30px; 
+  height: 30px;
   margin: 10px;
 }
 
@@ -99,7 +99,13 @@ input[type="submit"] {
   padding: 0 50px;
   text-align: center;
   height: 30px;
-  margin: 0px 75px;
+  margin: 10px 75px;
+  border-radius: 10px;
+  border-style: none;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  border: 1px solid black;
 }
 
 footer {
