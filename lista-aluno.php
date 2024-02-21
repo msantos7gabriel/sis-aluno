@@ -32,6 +32,7 @@
                 $idade = $_GET["idade"];
                 $senha = $_GET["senha"];
                 $endereco = $_GET["endereço"];
+                
 
                 echo "<td>$nome</td>";
                 echo "<td>$idade</td>";
