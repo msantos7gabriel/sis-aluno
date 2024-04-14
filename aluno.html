@@ -1,50 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/aluno.css" />
+    <link rel="icon" href="imgs/favicon.svg" type="image/svg+xml" />
+    <title>Aluno</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Aluno</title>
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <img src="img.jpg" alt="giannis" />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="professor.html">Professor</a>
-      </nav>
-      <img src="img.jpg" alt="giannis" />
-    </header>
-
-    <article class="forms">
-      <h3>Cadastro de Aluno</h3>
-
-      <form action="lista-aluno.php" method="get">
-        <label for="name">Nome do Aluno</label>
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome"required>
-
-        <label for="name">Endereço</label>
-        <input type="text" name="endereço" id="endereço" placeholder="Digite seu endereço"required>
-
-        <label for="name">Idade do Aluno</label>
-        <input type="number" name="idade" id="idade" placeholder="Digite sua idade" required>
-
-        <label for="name">Senha</label>
-        <input type="password " name="senha" id="senha" placeholder="Digite sua senha"required>
-
-        <input type="submit" value="salvar">
-
-      </form>
-
-    </article>
-
-    <footer>
-      <p>Rodapé</p>
-    </footer>
-
-</body>
-
+  <body>
+    <div class="container">
+      <header>
+        <h1>Alunos</h1>
+        <nav>
+          <a id="esquerda" href="index.html">Inicio</a>
+          <a id="meio" href="aluno.html">Aluno</a>
+          <a id="direita" href="professor.html">Professor</a>
+        </nav>
+      </header>
+    </div>
+  </body>
 </html>
