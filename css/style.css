@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background-image: linear-gradient(180deg, #0000c5 1%, #292933);
+  background-image: linear-gradient(180deg, #0000c5 , #292933 90%);
   filter: blur(100%);
 }
 main {

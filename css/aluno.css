@@ -17,7 +17,7 @@
 header {
   height: 20vh;
   width: 100%;
-  background: var(--primaria);
+  background: var(--secundaria);
   display: block;
 }
 header h1 {
@@ -44,17 +44,17 @@ nav a {
   height: 40px;
   width: 100px;
   transition: 0.5s;
-  border-inline: 0px solid var(--primaria);
+  border-inline: 0px solid var(--terciaria);
   border-radius: 0 10px 10px 0;
 }
 nav a:hover {
   text-decoration: underline;
-  background-color: var(--secundaria);
-  border-inline: 20px solid var(--secundaria);
+  background-color: var(--terciaria);
+  border-inline: 20px solid var(--terciaria);
   transition: 0.5s;
 }
 main {
-  background-color: var(--terciaria);
+  background-color: var(--quartenaria);
   width: 100%;
   height: 70vh;
   display: flex;
@@ -67,7 +67,7 @@ main .conteudo {
   margin: auto;
 }
 footer{
-  background-color: var(--primaria);
+  background-color: var(--secundaria);
   width: 100%;
   height: 10vh;
 }
