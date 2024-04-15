@@ -21,43 +21,42 @@
       <main>
         <div class="conteudo">
           <form action="lista-aluno.php" method="get">
-            <label for="name">Nome do Aluno</label>
-            <input
-              type="text"
-              name="nome"
-              id="nome"
-              placeholder="Digite seu nome"
-              required
-            />
-
-            <label for="name">Endereço</label>
-            <input
-              type="text"
-              name="endereço"
-              id="endereço"
-              placeholder="Digite seu endereço"
-              required
-            />
-
-            <label for="name">Idade do Aluno</label>
-            <input
-              type="number"
-              name="idade"
-              id="idade"
-              placeholder="Digite sua idade"
-              required
-            />
-
-            <label for="name">Senha</label>
-            <input
-              type="password "
-              name="senha"
-              id="senha"
-              placeholder="Digite sua senha"
-              required
-            />
-
-            <input type="submit" value="salvar" />
+            <div class="forms">
+              <div class="forms_left">
+                <div class="group">
+                  <input type="text" minlength="3" maxlength="50" required />
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Nome</label>
+                </div>
+                <div class="group">
+                  <input type="text" required />
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Endereço</label>
+                </div>
+              </div>
+              <div class="forms_rigth">
+                <div class="group">
+                  <input type="number" minlength="1" required />
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Idade do Aluno</label>
+                </div>
+                <div class="group">
+                  <input
+                    type="password"
+                    minlength="4"
+                    maxlength="12"
+                    required
+                  />
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Senha</label>
+                </div>
+              </div>
+            </div>
+            <input id="submit" type="submit" value="Salvar" />
           </form>
         </div>
       </main>
