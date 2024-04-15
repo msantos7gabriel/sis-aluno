@@ -15,7 +15,7 @@
   min-width: 100vh;
 }
 header {
-  height: 200px;
+  height: 20vh;
   width: 100%;
   background: var(--primaria);
   display: block;
@@ -45,11 +45,29 @@ nav a {
   width: 100px;
   transition: 0.5s;
   border-inline: 0px solid var(--primaria);
-  border-radius: 10px 00 10px;
+  border-radius: 0 10px 10px 0;
 }
 nav a:hover {
   text-decoration: underline;
   background-color: var(--secundaria);
   border-inline: 20px solid var(--secundaria);
   transition: 0.5s;
+}
+main {
+  background-color: var(--terciaria);
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+main .conteudo {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+}
+footer{
+  background-color: var(--primaria);
+  width: 100%;
+  height: 10vh;
 }
