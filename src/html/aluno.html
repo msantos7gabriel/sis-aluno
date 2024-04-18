@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/aluno.css" />
-    <link rel="icon" href="imgs/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/aluno.css" />
+    <link rel="icon" href="../imgs/favicon.svg" type="image/svg+xml" />
     <title>Aluno</title>
   </head>
 
@@ -13,24 +13,31 @@
       <header>
         <h1>Alunos</h1>
         <nav>
-          <a id="esquerda" href="index.html">Inicio</a>
+          <a id="esquerda" href="../../index.html">Inicio</a>
           <a id="meio" href="aluno.html">Aluno</a>
           <a id="direita" href="professor.html">Professor</a>
         </nav>
       </header>
       <main>
         <div class="conteudo">
-          <form action="lista-aluno.php" method="get">
+          <form action="../php/lista-aluno.php" method="get">
             <div class="forms">
               <div class="forms_left">
                 <div class="group">
-                  <input type="text" minlength="3" maxlength="50" required />
+                  <input
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    minlength="3"
+                    maxlength="50"
+                    required
+                  />
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Nome</label>
                 </div>
                 <div class="group">
-                  <input type="text" required />
+                  <input type="text" name="endereco" id="endereco" required />
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Endereço</label>
@@ -38,13 +45,21 @@
               </div>
               <div class="forms_rigth">
                 <div class="group">
-                  <input type="number" minlength="1" required />
+                  <input
+                    type="number"
+                    name="idade"
+                    id="idade"
+                    minlength="1"
+                    required
+                  />
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Idade do Aluno</label>
                 </div>
                 <div class="group">
                   <input
+                    name="senha"
+                    id="senha"
                     type="password"
                     minlength="4"
                     maxlength="12"
