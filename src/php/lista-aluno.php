@@ -28,16 +28,20 @@
                     <th>Endereço</th>
                 </tr>
                 <?php
-                $nome = $_GET["nome"];
-                $idade = $_GET["idade"];
-                $senha = $_GET["senha"];
-                $endereco = $_GET["endereço"];
 
+                require_once "class\aluno.php";
+                $nome = $_GET["nome"] ?? "";
+                $idade = $_GET["idade"] ?? "";
+                $senha = $_GET["senha"] ?? "";
+                $endereco = $_GET["endereco"] ?? "";
 
-                echo "<td>$nome</td>";
-                echo "<td>$idade</td>";
-                echo "<td>$senha</td>";
-                echo "<td>$endereco</td>";
+                $a = new aluno($nome, $idade, $senha, $endereco);
+
+                echo "<td>" . $a->getNome() . "</td>";
+                echo "<td>" . $a->getIdade() . "</td>";
+                echo "<td>" . $a->getSenha() . "</td>";
+                echo "<td>" . $a->getEndereco() . "</td>";
+
                 ?>
                 </tr>
             </table>
