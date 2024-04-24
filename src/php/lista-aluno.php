@@ -4,52 +4,57 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/lista-aluno.css" />
-    <title>Professor</title>
+    <link rel="stylesheet" href="..\css\lista-aluno.css" />
+    <title>Lista de Alunos</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <img src="img.jpg" alt="giannis" />
+            <h1>Lista de Alunos</h1>
             <nav>
-                <a href="professor.html">Professor</a>
-                <a href="aluno.html">Aluno</a>
+                <a id="esquerda" href="../../index.html">Inicio</a>
+                <a id="meio" href="../html/aluno.html">Aluno</a>
+                <a id="direita" href="professor.html">Professor</a>
             </nav>
-            <img src="img.jpg" alt="giannis" />
         </header>
-        <article class="main">
-            <section>Lista de Alunos</section>
-            <table>
-                <tr>
-                    <th>Nome</th>
-                    <th>Idade</th>
-                    <th>Senha</th>
-                    <th>Endereço</th>
-                </tr>
-                <?php
-
-                require_once "class\aluno.php";
-                $nome = $_GET["nome"] ?? "";
-                $idade = $_GET["idade"] ?? "";
-                $senha = $_GET["senha"] ?? "";
-                $endereco = $_GET["endereco"] ?? "";
-
-                $a = new aluno($nome, $idade, $senha, $endereco);
-
-                echo "<td>" . $a->getNome() . "</td>";
-                echo "<td>" . $a->getIdade() . "</td>";
-                echo "<td>" . $a->getSenha() . "</td>";
-                echo "<td>" . $a->getEndereco() . "</td>";
-
-                ?>
-                </tr>
-            </table>
-
-        </article>
-        <footer>
-            <p>Rodapé</p>
-        </footer>
+        <main>
+            <div class="conteudo">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Senha</th>
+                        <th>Idade</th>
+                    </tr>
+                    <?php
+                    require_once "class/aluno.php";
+                    $a = new aluno($_GET["nome"], $_GET["endereco"], $_GET["senha"], $_GET["idade"]);
+                    echo "
+                    <tr>
+                        <td>" . $a->getNome() . "</td>
+                        <td>" . $a->getEndereco() . "</td>
+                        <td>" . $a->getSenha() . "</td>
+                        <td>" . $a->getIdade() . "</td>
+                    </tr>";
+                    echo "
+                    <tr>
+                        <td>" . $a->getNome() . "</td>
+                        <td>" . $a->getEndereco() . "</td>
+                        <td>" . $a->getSenha() . "</td>
+                        <td>" . $a->getIdade() . "</td>
+                    </tr>";
+                    echo "
+                    <tr>
+                        <td>" . $a->getNome() . "</td>
+                        <td>" . $a->getEndereco() . "</td>
+                        <td>" . $a->getSenha() . "</td>
+                        <td>" . $a->getIdade() . "</td>
+                    </tr>"; ?>
+                </table>
+            </div>
+        </main>
+        <footer></footer>
 </body>
 
 </html>
